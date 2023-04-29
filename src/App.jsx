@@ -1,9 +1,15 @@
 import { Profile } from 'components/Profile/Profile';
-// import userData from './user.json';
+import userData from '../src/user.json/user.json';
 export const App = () => {
   return (
     <div>
-      <Profile />
+      <Profile
+        username={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        avatar={userData.avatar}
+        stats={userData.stats}
+      />
     </div>
     // <div
     //   style={{
