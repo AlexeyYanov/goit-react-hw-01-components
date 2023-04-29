@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
-      <div className="description">
+    <div className={css.profile}>
+      <div className={css.description}>
         <img src={avatar} alt={avatar} className={css.avatar} />
         <p className={css.name}>{username}</p>
         <p className={css.tag}>{tag}</p>
