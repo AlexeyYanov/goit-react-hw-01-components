@@ -1,5 +1,11 @@
 import { Profile } from 'components/Profile/Profile';
 import userData from '../src/user.json/user.json';
+// import { Statistics } from 'components/Statistics/Statistics';
+// import { Statistics } from 'components/Statistics/Statistics';
+// import stats from '../src/data.json/data.json';
+import friends from '../src/friends.json/friends.json';
+import { FriendList } from 'components/FriendList/FriendList';
+
 export const App = () => {
   return (
     <div>
@@ -10,7 +16,15 @@ export const App = () => {
         avatar={userData.avatar}
         stats={userData.stats}
       />
+      {/* <Statistics
+        title={stats.title}
+        key={stats.id}
+        label={stats.label}
+        percentage={stats.percentage}
+      /> */}
+      <FriendList friends={friends} />
     </div>
+
     // <div
     //   style={{
     //     height: '100vh',
