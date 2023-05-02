@@ -1,22 +1,91 @@
 .statistics {
-  background-color: aliceblue;
+  height: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: hsl(206, 64%, 90%);
+  text-align: center;
 }
 .title {
-  background-color: aliceblue;
+  height: 50px;
+  width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: white;
+  font-size: large;
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: 20px;
+  color: #6d6767;
+  text-transform: uppercase;
 }
 
-.stat-list {
-  background-color: aliceblue;
+.statlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .item {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
   background-color: aliceblue;
+  width: 5%;
 }
 
+.item:nth-child(1) {
+  background-color: hsl(203, 50%, 50%);
+  border-bottom-left-radius: 2px;
+}
+
+.item:nth-child(2) {
+  background-color: hsl(297, 50%, 50%);
+}
+
+.item:nth-child(3) {
+  background-color: hsl(348, 50%, 50%);
+}
+
+.item:nth-child(4) {
+  background-color: hsl(180, 68%, 35%);
+}
+
+.item:nth-child(5) {
+  background-color: hsl(135, 50%, 50%);
+  border-bottom-right-radius: 2px;
+}
 .label {
+  display: block;
+  text-align: center;
   background-color: aliceblue;
+  background-color: inherit;
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
 }
 
 .percentage {
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 10px;
   background-color: aliceblue;
+  background-color: inherit;
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
 }
