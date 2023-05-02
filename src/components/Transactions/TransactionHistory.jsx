@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Transactions.module.css';
+console.log(css);
 export const TransactionHistory = ({ data }) => {
   return (
     <div>
@@ -38,4 +39,3 @@ TransactionHistory.propTypes = {
 
 export default TransactionHistory;
 // final 3
-// final 4
